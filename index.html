@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>سخن / بارد 🔥</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="neb neb-1"></div>
+<div class="neb neb-2"></div>
+
+<div class="page">
+  <header class="header">
+    <span class="eyebrow">لعبة من مازن</span>
+    <h1 class="title">سخن / بارد 🔥</h1>
+    <p class="header-sub">في قلب مستخبي في الضلمة… حرّكي إصبعك ودوّري عليه</p>
+  </header>
+
+  <div class="hud">
+    <div class="hud-i"><span>الجولة</span><b id="round">1/5</b></div>
+    <div class="hud-i"><span>محاولات الجولة</span><b id="attempts">0</b></div>
+    <div class="hud-i"><span>أحسن نتيجة</span><b id="best">—</b></div>
+  </div>
+
+  <div class="thermo">
+    <div class="thermo-bar"><div class="thermo-fill" id="thermo-fill"></div></div>
+    <div class="thermo-txt"><span id="temp">حرّكي إصبعك…</span><small id="trend"></small></div>
+  </div>
+
+  <div class="arena" id="arena">
+    <canvas id="game"></canvas>
+    <div class="arena-hint" id="arena-hint">لمّسي وحرّكي، وسيبي الإصبع لما تحسي إنه هنا 👆</div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn" id="btn-hint" type="button">ساعديني 🙏</button>
+    <button class="snd" id="snd" type="button" aria-label="الصوت">🔊</button>
+  </div>
+  <p class="note" id="note"></p>
+
+  <div class="reveal" id="reveal">
+    <div class="rv-icon" id="rv-icon">💗</div>
+    <p class="rv-text" id="rv-text"></p>
+    <p class="rv-sub" id="rv-sub"></p>
+    <button class="btn" id="btn-next" type="button">الجولة الجاية ▶</button>
+  </div>
+
+  <p class="footer">مازن — أبو ليلي 🌙</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
